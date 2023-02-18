@@ -1,0 +1,110 @@
+*:before,
+*:after,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-main: #142457;
+  --clr-secondary: #51aeb0;
+  --clr-text: #e7e7e7;
+  --clr-red: #f92d45;
+
+  --b-radius: 0.3rem;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+/* Home Page styles */
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.navigation {
+  width: 80%;
+  margin: 10rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  text-align: center;
+}
+
+.navigation a {
+  border-radius: var(--b-radius);
+  box-shadow: -1px -3px 19px 0px rgba(81, 174, 176, 0.35);
+  color: #51aeb0;
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 0.5rem 0;
+}
+
+/* Daily page style */
+
+.wrapper {
+  width: 30%;
+  margin: 0 auto;
+  background: #007336;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  top: 5rem;
+  border-radius: var(--b-radius);
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  height: 90%;
+  /* background-color: #007336; */
+}
+.break-line {
+  background-color: #fff;
+  width: 100%;
+  height: 1px;
+  margin-bottom: 2rem;
+}
+.list-content > li {
+  display: flex;
+  padding: 0.4rem 0;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.namozTime-box {
+  display: block !important;
+}
+.namozTime li {
+  display: flex;
+  justify-content: space-between;
+}
+.namozTime li:not(:nth-child(1)) {
+  padding: 0.5rem 0;
+}
+
+.regions__box {
+  margin-top: 2rem;
+  width: 30%;
+  margin: 0 auto;
+  left: 300px;
+  top: 2rem;
+  background: #007336;
+}
+#regions {
+  width: 100%;
+  border: 2px solid #007336;
+  border-radius: 0.3rem;
+  font-size: 1.2rem;
+  outline: none;
+}
